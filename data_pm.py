@@ -66,11 +66,11 @@ def uploadImage(file, key, content):
 
 def connect():
     conn = pymysql.connect(
-        host='127.0.0.1',
+        host='io-mysqldb8.cxjnrciilyjq.us-west-1.rds.amazonaws.com',
         port=3306,
-        user='root',
-        passwd='password',
-        db='Inlet',
+        user='admin',
+        passwd='prashant',
+        db='construction',
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
     )
